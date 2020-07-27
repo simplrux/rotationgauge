@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body{
+    font-family: 'Mandali', sans-serif;
+    // text-transform: lowercase;
+    // letter-spacing: 0.5px;
+    -webkit-overflow-scrolling: touch;
+}
+.noscroll{
+    overflow: hidden!important;
+}
+
+div:focus{
+    outline:0;
+}
+.slick-arrow{
+    width:40px;
+    height:40px;
+}
+
+.slick-prev {
+    left: 20px;
+    z-index:1;
+    &:before{
+        content: none;
+    }
+    &:after{
+        content: url('./assets/back.svg');
+        color: red;
+        font-size: 30px;
+    }
+}
+
+.slick-next {
+    right: 20px;
+    z-index:1;
+   
+    &:before{
+        content: url('./assets/next.svg');
+        color: red;
+        font-size: 30px;
+    }
+}
+
+.slick-list{
+    height: 100%;
+}
