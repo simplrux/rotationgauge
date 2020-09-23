@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "simplruxcom"
+  },
+  "targets": {
+    "simplruxcom": {
+      "hosting": {
+        "simplrapp": [
+          "simplrux-d1e9f"
+        ]
+      }
+    }
   }
 }

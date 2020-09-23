@@ -2,13 +2,16 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 body{
     font-family: 'Mandali', sans-serif;
-    // text-transform: lowercase;
-    // letter-spacing: 0.5px;
     -webkit-overflow-scrolling: touch;
 }
 .noscroll{
     overflow: hidden!important;
 }
+
+app-chat{
+    display:flex;
+    height: 100%;
+  }
 
 div:focus{
     outline:0;
