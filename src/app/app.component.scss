@@ -89,7 +89,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   transition: 2s transform;
 
   @media screen and (max-width: 1024px) {
-    background-image: url('../assets/canvas_mobile.jpg');
+    // background-image: url('../assets/canvas_mobile.jpg');
     display: initial;
     background-size: cover;
   }
@@ -124,18 +124,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
       }
       .buildings-exp{
-        left:-400px;
+        left:-21vw;
         top:0;
         width:60%;
       }
       .gloss-exp{
-        right:-350px;
+        right:-21vw;
+        // right: -230px;
         top:50px;
         width:60%;
         text-align: right;
       }
       .route-exp{
-        right:-300px;
+        right:-21vw;
         top:400px;
         width:60%;
         text-align: right;
@@ -325,7 +326,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
       border-radius: inherit;
       @media screen and (max-width: 1024px) {
         opacity:0.6;
-          background-image: url('../assets/glass.png');
+          // background-image: url('../assets/glass.png');
       }
       .desktop-nav {
         position: relative;
