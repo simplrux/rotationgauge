@@ -1,7 +1,7 @@
 
 <div id="skills">
   <ngx-slick class="carousel" *ngIf="!showItems" #slickModal="slick-modal" [config]="slideConfig" (afterChange)="slickChange($event)">
-    <div ngxSlickItem class="item" style="background-image: url('../../assets/webdev.svg')">
+    <div ngxSlickItem class="item" style="background-image: url('assets/webdev.svg')">
       <h1>UX/UI Design</h1>
       <div class="view" (click)="showItems = true; 
           webDev = false; webDesign = true; title='Skills / UXUI'; animateList('webdesign');">
@@ -9,7 +9,7 @@
         </div>
       </div>
     </div>
-    <div ngxSlickItem class="item" style="background-image: url('../../assets/flask.svg')">
+    <div ngxSlickItem class="item" style="background-image: url('assets/flask.svg')">
       <h1>Web Development</h1>
       <div (click)="webDev = true; webDesign = false; showItems = true; title='Skills / Web Dev'; animateList('webdev');" class="view">
         <div class="inner">
@@ -18,7 +18,7 @@
     </div>
   </ngx-slick>
   <div *ngIf="webDev">
-    <img (click)="webDev = false; webDesign = false; showItems = false; title='Skills';" class="close" src="../../assets/close.svg">
+    <img (click)="webDev = false; webDesign = false; showItems = false; title='Skills';" class="close" src="assets/close.svg">
     <div *ngFor='let skill of webDevList'>
       <div class="skill">
         <h3>{{skill.title}}</h3>
@@ -34,7 +34,7 @@
     </div>
   </div>
   <div *ngIf="webDesign">
-      <img (click)="webDev = false; webDesign = false; showItems = false; title='Skills';" class="close" src="../../assets/close.svg">
+      <img (click)="webDev = false; webDesign = false; showItems = false; title='Skills';" class="close" src="assets/close.svg">
 
     <div *ngFor='let skill of webDesignList'>
       <div class="skill">
